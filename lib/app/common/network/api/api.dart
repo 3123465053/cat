@@ -36,15 +36,15 @@ class UserApi {
 
   ///官网
   static String official =
-      'https://cattranslator.ai-face.ai';
+      'https://cattranslatorpro.ai-face.ai';
 
   ///用户协议
   static String agreement =
-      'https://cattranslator.ai-face.ai/pages/catTranslator/catTranslatorText1';
+      'https://cattranslatorpro.ai-face.ai/pages/catTranslator/catTranslatorText1';
 
   ///隐私政策
   static String privacy =
-      'https://cattranslator.ai-face.ai/pages/catTranslator/catTranslatorText2';
+      'https://cattranslatorpro.ai-face.ai/pages/catTranslator/catTranslatorText2';
 }
 
 
