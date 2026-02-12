@@ -1,0 +1,4 @@
+enum MotionType {
+  tennis,
+  running
+}
