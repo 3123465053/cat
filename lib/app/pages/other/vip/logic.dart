@@ -222,7 +222,7 @@ class VipLogic extends GetxController {
                 AppTipsWidget.showToast("绑定苹果ID，以便跨设备使用".tr);
                 //没有在登录页面才去登录页
                 if (Get.currentRoute != AppRoutes.LOGIN) {
-                  Get.toNamed(AppRoutes.LOGIN, arguments: {"loginType": 0});
+                  Get.toNamed(AppRoutes.LOGIN, arguments: {"loginType": 0,"showClose":true});
                 }
               }
             });
@@ -366,6 +366,18 @@ class VipLogic extends GetxController {
     });
 
     _inAppPurchase.buyNonConsumable(purchaseParam: purchaseParam);
+  }
+
+
+  @override
+  void onClose() {
+    try {
+      if (Platform.isIOS) {
+        _subscription.cancel();
+        print("safdssss");
+      }
+    } catch (e) {}
+    super.onClose();
   }
 }
 

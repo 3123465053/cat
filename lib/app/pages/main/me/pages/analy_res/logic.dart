@@ -111,7 +111,7 @@ class AnalysisResLogic extends GetxController {
 
     switch (motionType) {
       case MotionType.tennis:
-        return  "cat_en";
+        return  CommonUtils.getCountryCode()!="CN"?"cat_en":"cat";
       case MotionType.running:
         return "running";
     }

@@ -15,7 +15,7 @@ class SettingLogic extends GetxController{
 
   // 点击登录/注册按钮
   void login(int type) {
-    Get.toNamed(AppRoutes.LOGIN, arguments: {"loginType": type});
+    Get.toNamed(AppRoutes.LOGIN, arguments: {"loginType": type,"showClose":true});
     // 这里实现跳转到登录页面的逻辑
     print('点击了登录/注册按钮');
   }
@@ -76,7 +76,7 @@ class SettingLogic extends GetxController{
       SpUtils.setBool(SpKey.isLogoutOrDelete, true);
       EasyLoading.dismiss();
       AppTipsWidget.showToast("已退出登录");
-      Get.offAllNamed(AppRoutes.LOGIN, arguments: {"loginType":1});
+      Get.offAllNamed(AppRoutes.LOGIN, arguments: {"loginType":1,});
     } catch (e) {
       EasyLoading.dismiss();
       AppTipsWidget.showToast('退出登录出错 $e,请稍后再试');

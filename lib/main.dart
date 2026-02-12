@@ -31,7 +31,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     var locale= Get.deviceLocale; //当前设备语言;
-   //var locale=Locale("en","US");
+  // var locale=Locale("en","US");
     return GetMaterialApp(
       // 你的翻译
       locale: locale,

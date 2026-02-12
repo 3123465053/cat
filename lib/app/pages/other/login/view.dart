@@ -232,10 +232,35 @@ class LoginPage extends GetView<LoginLogic> {
               ),
             ),
           ),
+
+         controller.showClose.value ? closeWidget() : Positioned(
+             top: 0,
+             child: SizedBox()),
+
         ],
       ),
     ));
   }
+
+
+  closeWidget() {
+    return Positioned(
+        top: 50,
+        right: 20,
+        child: InkWell(
+          onTap: () {
+            Get.back();
+          },
+          child: Container(
+            padding: const EdgeInsets.all(2),
+            decoration: BoxDecoration(
+                borderRadius: BorderRadius.all(Radius.circular(100)),
+                border: Border.all(color: Colors.grey.shade400, width: 1.5)),
+            child: Icon(Icons.close, color: Colors.grey.shade400, size: 20),
+          ),
+        ));
+  }
+
 }
 
 

@@ -8,6 +8,7 @@ import 'package:get/get.dart';
 import 'package:image_picker/image_picker.dart';
 import '../../../common/config/app_color.dart';
 import '../../../common/enum/MotionType.dart';
+import '../../../common/utils/secure_storage.dart';
 import '../../../routes/app_pages.dart';
 import 'logic.dart';
 
@@ -39,9 +40,9 @@ class HomePage extends GetView<HomeLogic> {
       //   onPressed: () async {
       //     //  print(Constant.userInfo.value.nickname);
       //     //    Get.toNamed(AppRoutes.LOGIN, arguments: {"loginType": 1});
-      //     Get.toNamed(AppRoutes.VIP);
+      //   //  Get.toNamed(AppRoutes.VIP);
       //     //  AppCommonApi.getUserInfo();
-      //
+      //     await SecureStorage.clean();
       //     // try{  FlutterTts flutterTts = FlutterTts();
       //     // var result = await flutterTts.speak("Hello");
       //     // print("dafdfsdsd");
