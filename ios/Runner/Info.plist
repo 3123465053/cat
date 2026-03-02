@@ -49,5 +49,17 @@
      <array>
             <integer>1</integer>
      </array>
+     <key>NSCameraUsageDescription</key>
+         	<string>Allow access to the camera to start recording workout videos.</string>
+         	<key>NSLocalNetworkUsageDescription</key>
+         	<string>我们需要访问网络以获取数据</string>
+         	<key>NSMicrophoneUsageDescription</key>
+         	<string>We need access to your microphone to enable voice calling.</string>
+         	<key>NSPhotoLibraryAddUsageDescription</key>
+         	<string>Allow access to your photo library to select workout videos.</string>
+         	<key>NSPhotoLibraryUsageDescription</key>
+         	<string>Allow access to your photo library to select workout videos.</string>
+         	<key>UIApplicationSupportsIndirectInputEvents</key>
+         	<true/>
 </dict>
 </plist>

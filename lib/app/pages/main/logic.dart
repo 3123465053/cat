@@ -32,7 +32,9 @@ class MainLogic extends GetxController {
       }
 
       Get.find<HomeLogic>().selectVideo(ImageSource.camera, MotionType.tennis);
-    } catch (e) {}
+    } catch (e) {
+      print("sfadfdd$e");
+    }
   }
 
   stopAudio() {
